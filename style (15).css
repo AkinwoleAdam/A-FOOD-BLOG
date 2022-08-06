@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Inter&family=Kantumruy+Pro:ital@0;1&family=Karla&family=Kumbh+Sans&family=Lexend+Deca&family=Poppins:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;0,400;1,200&family=Red+Hat+Display:wght@500&family=Roboto&family=Tajawal&display=swap');
+
+
+body {
+    font-size:1rem;
+}
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+   /*------ GLOBAL STYLING --------*/
+
+h1{
+  font-size:6.5vw;
+  font-family: cursive;
+}
+
+
+h3{
+  font-family:'Merriweather',serif;
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+
+h4{
+  font-family:'Merriweather',serif;
+  font-size:1.1rem;
+  font-weight:700;
+  letter-spacing:0.4rem;
+}
+
+
+h6{
+  font-size:0.9rem;
+  font-weight:700;
+  color:#6CAA7F;
+}
+
+
+p{
+  font-size:1rem;
+  font-family: 'Karla',sans-serif;
+  line-height: 1.5rem;
+}
+
+button{
+  background:#6CAA7F;
+  border-style:none;
+  color:#fff;
+  letter-spacing:1px;
+  padding:0.7rem 1.3rem;
+  font-size:0.9rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+
+hr{
+  background:#2ecc71;
+  color:#2ecc71;
+  height:0.1rem;
+}
+
+    
+    /* --------- HEADER ---------*/
+
+    
+ header .intro{
+   position:relative;
+ }
+
+header .intro .intro_text{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+header .intro .intro_text h1{
+  font-family: Arial, Helvetica, 
+  sans-serif;
+  color:#000;
+}
+
+header .intro .intro_text h6{
+  letter-spacing: 0.3rem;
+}
+
+header .navbar .navbar-nav .nav-link::after{
+  content:'';
+  display:block;
+  width:0;
+  height:2px;
+  background: #2ecc71;
+  transition: width 0.3s;
+}
+
+header .navbar .navbar-nav .nav-link:hover::after{
+  width:70%;
+  border-bottom:2px solid #27ae60;
+}
+
+header .navbar .navbar-nav i{
+  font-size: 1.3rem;
+  color: green;
+  cursor:pointer;
+}
+
+
+
+  /*---------- FEATURES ---------*/
+
+
+.featured .row .one{
+  height:370px;
+  position:relative;
+}
+
+.featured .row .one img{
+  height:100%;
+  width:100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.featured .row .one .text{
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+}
+
+.featured .row .one .text p{
+  letter-spacing:0.2rem;
+  line-height:2rem;
+}
+
+.featured .row .one .text a{
+  text-decoration:none;
+  color:#fff;
+  border: none;
+  font-size:0.9rem;
+}
+
+.featured .row .one .text a::after{
+    content:'';
+  display:block;
+  width:32%;
+  height:2px;
+  background: #2ecc71;
+}
+
+
+   /*-------- NEWSLETTER ---------*/
+
+
+.subscription{
+  background:#defadb;
+}
+
+.subscription .row .sub input[type="email"]{
+  outline:none;
+  border:1px solid #6caa7f;
+  border-radius:15px;
+}
+
+.subscription .row .sub button{
+  border-radius:15px;
+}
+
+.subscription .row .sub input[type="email"]::placeholder{
+  font-size:0.9rem;
+}
+
+
+/*---------- BLOG -----------*/
+
+
+.blog .row .post h3{
+  font-size:1.2rem;
+}
+
+
+.blog .row .post a{
+  text-decoration:none;
+  font-size: 0.9rem;
+  color:#27ae60;
+  font-weight: bold;
+  border:none;
+}
+
+.blog .row .sidebar .side2 .row .side_text h5{
+  font-size:1rem;
+}
+
+.blog .row .sidebar .side2 .row .side_text a{
+  text-decoration:none;
+  color:#6caa7f;
+  border: none;
+  font-size:0.8rem;
+}
+
+.blog .side3 .one{
+  height:300px;
+  position:relative;
+}
+
+
+.blog .side3 .one img{
+  height:100%;
+  width:100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.blog .side3 .one .text{
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:7rem 1.1rem 0 1.1rem;
+}
+
+.blog .side3 .one .text h5{
+  font-size:1.1rem;
+}
+
+footer a{
+  text-decoration:none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
